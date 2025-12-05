@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    
+    <!-- Header -->
+     <script type="module" src="js/index.js"></script>
+    <header>
+        <nav>
+            <div class="logo">MediCare HMS</div>
+            <div class="nav-buttons" id="notLoggedIn">
+                <a class="btn btn-login" href="./pages/loginPage.html">Login</a>
+                <a class="btn btn-register" href="./pages/registerPage.html">Register</a>
+            </div>
+            <div class="nav-buttons" id="loggedIn">
+                <span class="user-badge" id="userBadge">Guest</span>
+                <button class="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to MediCare Hospital Management System</h1>
+        <p>Streamline your healthcare operations with our comprehensive digital solution for efficient patient care, appointment scheduling, and medical records management.</p>
+    </section>
+
+
+<!-- Features Section -->
+<section class="features">
+    <h2>Our Key Features</h2>
+    <div class="features-grid">
+
+        <a class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>Patient Management</h3>
+            <p>Efficiently register, manage, and track patient records with comprehensive medical history and personal information storage.</p>
+        </a>
+
+        <a class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3>Appointment System</h3>
+            <p>Easy online appointment booking, scheduling, and management. View, cancel, or reschedule appointments with just a few clicks.</p>
+        </a>
+
+        <a class="feature-card">
+            <div class="feature-icon">👨‍⚕️</div>
+            <h3>Doctor Management</h3>
+            <p>Manage doctor profiles, specializations, availability, and schedules. View assigned appointments and access patient records seamlessly.</p>
+        </a>
+
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Patient Registration</a></li>
+                    <li><a href="#">Appointment Booking</a></li>
+                    <li><a href="#">Medical Records</a></li>
+                    <li><a href="#">Doctor Portal</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>📧 info@medicare.com</li>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>📍 123 Health St, Medical City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MediCare Hospital Management System. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

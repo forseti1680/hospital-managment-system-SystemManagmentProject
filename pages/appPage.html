@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | MediCare HMS</title>
+    <link rel="stylesheet" href="../css/appPage.css">
+    <script type="module" src="../js/appPage.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">MediCare HMS</a>
+            <div class="user-info">
+                <span class="user-badge" id="userBadge">Loading...</span>
+                <button class="btn btn-login" id="logout" onclick="logout()">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Welcome Section -->
+    <div class="container">
+        <div class="welcome-box">
+            <h1>Welcome, <span id="welcomeName">User</span> 👋</h1>
+            <p>You are successfully logged in. You can now access and manage your appointments.</p>
+
+            <button class="btn-main" id="appointmentRouter">Go to Appointments</button>
+        </div>
+    </div>
+
+</body>
+</html>

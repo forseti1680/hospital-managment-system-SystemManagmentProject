@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Appointments | MediCare HMS</title>
+    <link rel="stylesheet" href="../css/appointment.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="appPage.html" class="logo">MediCare HMS</a>
+            <span class="user-badge" id="userBadge">Doctor</span>
+            <a href="./appPage.html" class="btn btn-main">Dashboard</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Create Appointment -->
+        <div class="card">
+            <h2>Book a New Appointment</h2>
+
+            <div class="input-group">
+                <label for="doctorSelect">Select Doctor</label>
+                <select id="doctorSelect"></select>
+            </div>
+            <div class="input-group">
+                <label for="appointmentDate">Select Date & Time</label>
+                <input type="datetime-local" id="appointmentDate" required>
+            </div>
+
+            <button class="btn btn-create" id="createBtn">Create Appointment</button>
+        </div>
+
+        <!-- Appointment Table -->
+        <div class="table-card">
+            <h2>Your Appointments</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Doctor Id</th>
+                        <th>Doctor Name</th>
+                        <th>Date/Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="appointmentTable"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script type="module" src="../js/appointment.js"></script>
+</body>
+
+</html>

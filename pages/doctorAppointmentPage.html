@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointments | MediCare HMS</title>
+    <link rel="stylesheet" href="../css/appointment.css">
+    <script type="module" src="../js/appointment.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="appPage.html" class="logo">MediCare HMS</a>
+            <span class="user-badge" id="userBadge">Doctor</span>
+            <a href="./appPage.html" class="btn btn-main">Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="container container-doctor">
+
+        <div class="table-card">
+            <h1>Doctor Appointments</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Patient ID</th>
+                        <th>Patient Name</th>
+                        <th>Date & Time</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="appointmentsBody"></tbody>
+            </table>
+
+            <div id="emptyState" class="empty-state" style="display:none;">
+                No appointments found.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
